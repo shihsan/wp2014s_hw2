@@ -1,0 +1,236 @@
+body{
+	background-image: url(http://subtlepatterns.com/patterns/rip_jobs.png);
+}
+
+/* This code is tested with latest version of Firefox and Chrome */
+.box {
+    margin: 0 auto;
+	margin-top: 2%;
+	margin-left: 7%;
+	margin-bottom: 10%;
+	padding-top: 1em;
+	padding-left: 3em;
+	padding-bottom: 1em;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+  border-radius: 0%     0%     1%     0% /     0%     0%     20%     0%;
+}
+
+.box:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 96%;
+    bottom: 0px;
+    right: 0px;
+    background: #eee;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 36px rgba(0,0,0,0.1);
+    -webkit-transform: skew(2deg,2deg) translate(3px,8px);
+     -moz-transform: skew(2deg,2deg) translate(3px,8px);
+     -ms-transform: skew(2deg,2deg) translate(3px,8px);
+     -o-transform: skew(2deg,2deg) translate(3px,8px);
+     transform: skew(2deg,2deg) translate(3px,8px);
+}
+
+.box:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 96%;
+    bottom: 0px;
+    right: 0px;
+    background: #eee;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 36px rgba(0,0,0,0.1);
+    -webkit-transform: skew(2deg,2deg) translate(-1px,2px);
+     -moz-transform: skew(2deg,2deg) translate(-1px,2px);
+     -ms-transform: skew(2deg,2deg) translate(-1px,2px);
+     -o-transform: skew(2deg,2deg) translate(-1px,2px);
+     transform: skew(2deg,2deg) translate(-1px,2px);
+}
+
+
+
+.viewpic{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+.viewpic img{
+	width: 95%;
+	position: relative;
+	top: -150px;
+	left: 0px;
+	-webkit-box-sizing: border-box；
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.content{
+    margin-top: 1em;
+    margin-right: 3em;
+    margin-bottom: 2em;
+    background: rgba(0, 255, 183, 0.5);
+    border-radius: 50px;
+}
+
+.sidebar{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.sidebar ul li{
+    display: inline;
+    border-radius: 15px;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+.sidebar ul li:nth-child(1){
+    background-color: #00BB00;
+}
+
+.sidebar ul li:nth-child(1) a{
+    color: WHITE;
+}
+
+.sidebar ul li:nth-child(2) a{
+    color: #019858;
+}
+
+.sidebar ul li:nth-child(2) a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    color: #006030;
+}
+
+
+
+
+.detail{
+	padding-left: 3em;
+    padding-bottom: 2em;
+    background: rgba(148, 148, 255, 0.4);
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top: RED 2px dashed;
+}
+
+
+
+.detail img{
+    margin-top: 7em;
+    margin-right: 5em;
+    float: right;
+    width: 25%;
+    padding: 0.2em;
+    border: yellow 8px solid;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+
+.fa-ul{
+    display: inline-block;
+}
+
+.detail ul li{
+    line-height: 2em;
+}
+
+
+#edu li:nth-child(1){
+    color: RED;
+    font-size: 1.5em;
+}
+
+
+.item{
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: #F75000;
+    display: inline-block;
+    width: 100px;
+}
+
+.interest{
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: #5B00AE;
+    display: inline-block;
+    width: 170px;
+}
+
+
+h1{
+	font-family: 'Poiret One', cursive;
+	font-weight: bolder;
+	font-size: 4em;
+}
+
+h2{
+    margin-right: 2em;
+    border-bottom: rgba(0, 0, 148, 1) 1px solid;
+    padding-bottom: 5px;
+    padding-left: 0.5em;
+    font-weight: bolder;
+    font-size: 2em;
+    color: rgba(0, 0, 148, 1);
+}
+
+.top a{
+    display: block;
+    text-decoration: none;
+    background-color: RED;
+    color: WHITE;
+    width: 5em;
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    float: right;
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+}
+
+.top a:hover{
+    width: 5.2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    font-size: 1.4em;
+}
+
+footer p{
+    font-size: 0.6em;
+    color: #7B7B7B;
+    text-align: center;
+}
+
+
+
+
